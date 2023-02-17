@@ -1,0 +1,14 @@
+
+public class identifier {
+
+	public static void main(String[] args) {
+		//꼭 지켜야 할 규칙 (안지킬 시 에러가 발생)
+		//1.식별자의 이름은 중복을 허용하지 않는다.
+		//2.대/소문자를 철저하게 구분한다.
+		int age = 25;
+		int Age =40;
+		System.out.println(age + Age);
+
+	}
+
+}

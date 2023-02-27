@@ -27,7 +27,7 @@ public class EnhancedForLoop {
 		
 		int sum=0;
 		for(int x :scores) {
-			sum+=x;
+			sum+=x; //누적합
 		}
 		double avg;
 	

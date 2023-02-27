@@ -25,39 +25,39 @@ public class ArrayInsertQuiz {
 //			
 //			
 //		} //내가 한거
-		boolean flag = false;
 
-		String[] foods2 = new String[50];
+		String[] foods = new String[50];
 		System.out.print("음식 이름을 입력하세요 : ");
 
-		for (int i = 0; i < foods2.length; i++) {
+		for (int i = 0; i < foods.length; i++) {
 			System.out.print(">");
 			String name = sc.next();
-			flag=false;
 			if (name.equals("배불러")) {
 				System.out.println("입력을 종료합니다.");
-				flag = false;
 				break;
 			}
 
-			if (name.equals(foods2[i])) {
-				flag = true;
-
-			}
-
-			foods2[i] = name;
+			int j; //?
+			for(j=0; j<foods.length; j++) {
+				if(name.equals(foods[j])) {
+			System.out.println("이미 존재하는 음식입니다.");
+			i--;  //?
+			break;
+				}}
+				if(j == foods.length) {
+			foods[i] = name;}
 		}
 
-		for (String f : foods2) {
+		for (String f : foods) {
 			if (f == null)
 				break;
 			System.out.print(f + " ");
-		}if(flag) {System.out.println("이미존재합니다."); } else {
-			System.out.println("잘입력했어요");
+		}
+		
 
 		
 		// 입력을 받았는데 이미 배열에 존재하는 음식이라면 이미존재한다 출력하고
 		// 새로운 음식을 입력받을 수 잇도록 코드작성
 
 	}
-}}
+}
